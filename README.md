@@ -13,8 +13,8 @@ si
 si, docker solo se que se usa para crear contenedores, que aislan a un entorno
 
 ¿Sabes cómo se usa?
-Git es una crear versiones de un codigo
-postman: permite hacer peticiones http, con la finalidad de saber la informacion y saber las respuestas del servidor
+Git es una crear versiones de un codigo, 
+Postman: permite hacer peticiones http, con la finalidad de saber la informacion y saber las respuestas del servidor,
 docker: no se mucho de esto
 
 Responda las siguientes preguntas
@@ -25,4 +25,4 @@ Desarrollo
 ¿Tienes ideas de apps o algo propio que quieras desarrollar? 
 creo mis propias proyectos, bajo mi stack, para aprender
 
-Resuelva las siguientes preguntas en un repositorio aparte y linkealas en tu readme.md
+
