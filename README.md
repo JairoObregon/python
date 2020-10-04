@@ -4,6 +4,7 @@ Estimados postulantes, el siguiente examen tiene como objetivo medir sus siguien
 
 Se evaluará: detalle de respuestas, capacidad, rol que desempeñan (hay espacio por cada rol), manejo de funciones, framework que usen. Deberán crear un FORK de este repositorio y resolver en el readme.me las preguntas así como linkear las resoluciones a los problemas de programación por este medio
 
+
 Responda las siguientes preguntas sobre las siguientes tecnologías: Docker, git, postman.
 ¿Sabes que es?
 si
