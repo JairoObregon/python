@@ -1,0 +1,9 @@
+{% extends 'core/index.html' %}
+{% block 'content' %}
+<div class="container mt-4 mb-4">
+  <h1 style="text-align: center;">Eliminar registro</h1>
+<form method="post">{% csrf_token %}
+    <p>Estas seguro de eliminar "{{ object.Nombres }}"?</p>
+    <input type="submit" value="Confirm" class="btn btn-primary">
+</form>
+{% endblock %}

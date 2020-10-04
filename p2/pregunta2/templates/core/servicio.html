@@ -1,0 +1,25 @@
+{% extends 'core/index.html' %}
+{% block 'content' %}
+<div class="container">
+<div>
+    <h1 class="mt-4 mb-4" style="text-align: center;">Sevicios</h1>
+</div>
+<div>
+    <div class="row">
+    {% for a in data %}
+    
+        <div class="col-sm-4 ml-4 mr-4 ">
+            <div class="card" style="width: 400px">
+                <img src="{{ a.imagen.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{a.nombre}}</h5>
+                <p class="card-text">{{a.descrpcion}}</p>
+                </div>
+            </div>
+        </div>  
+    {% endfor %}
+</div>
+</div>
+</div>
+
+{% endblock %}

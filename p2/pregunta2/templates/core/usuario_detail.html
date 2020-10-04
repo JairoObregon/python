@@ -1,0 +1,13 @@
+
+{% extends 'core/index.html' %}
+{% block 'content' %}
+<div class="container">
+    <h1 class="mt-2 mb-4" style="text-align: center;"> Detalle de la persona</h1>
+    <p> <strong>Su nombre es:</strong>  {{usuario.Nombres}}</p>
+    <p> <strong> Su apellido paterno es: </strong> Su apellido paterno es: {{usuario.Apaterno}}</p>
+    <p> <strong>Su apellido materno es:</strong> Su apellido materno es: {{usuario.Amaterno}}</p>
+    <p> <strong> Su edad es:</strong> Su edad es: {{usuario.Edad}}</p>
+    <a href="{% url 'list' %}"  class="btn btn-primary"> Volver a la lista</a>
+</div>
+
+{% endblock %}

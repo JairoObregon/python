@@ -1,0 +1,36 @@
+
+{% extends 'core/index.html' %}
+{% block 'content' %}
+<div class="container">
+    <div class="mt-4 mb-4"> 
+        <a href="{% url 'create' %}" class="btn btn-primary"> Crear Usuario</a>
+    </div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First</th>
+        <th scope="col">A. Paterno</th>
+        <th scope="col">A. Materno</th>
+        <th scope="col">Ver</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for obj in object_list %}
+      <tr>
+        <th scope="row">{{obj.pk}}</th>
+        <td>{{obj.Nombres}}</td>
+        <td>{{obj.Apaterno}}</td>
+        <td>{{obj.Amaterno}}</td>
+        <td><a href="{% url 'detail' obj.pk %}"> Ver mas</a></td>
+        <td><a href="{% url 'edit' obj.pk %}"> edit</a></td>
+        <td><a href="{% url 'delete' obj.pk %}"> eliminar</a></td>
+      </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+{% endblock %}
